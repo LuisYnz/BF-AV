@@ -1,0 +1,28 @@
+2025-05-08 18:02:29,074 - INFO - --- Iniciando Suite: HomePageComponent ---
+2025-05-08 18:02:29,075 - INFO - Ejecutando: Test Step 001: Selección de idioma
+2025-05-08 18:02:29,075 - INFO - Ejecutando paso 1: Selección de idioma
+2025-05-08 18:02:31,086 - INFO - \u2705 Paso exitoso: Test Step 001: Selección de idioma
+2025-05-08 18:02:31,086 - ERROR - \u274c Fallo en el paso 1: Selección de idioma
+2025-05-08 18:02:31,086 - INFO - Ejecutando: Test Step 002: Selección de POS
+2025-05-08 18:02:31,086 - INFO - Ejecutando paso 2: Selección de POS
+2025-05-08 18:02:33,914 - INFO - \u2705 Paso exitoso: Test Step 002: Selección de POS
+2025-05-08 18:02:33,914 - ERROR - \u274c Fallo en el paso 2: Selección de POS
+2025-05-08 18:02:33,914 - INFO - Ejecutando: Test Step 003: Selección de tipo de vuelo
+2025-05-08 18:02:33,915 - INFO - Ejecutando paso 3: Selección de tipo de vuelo
+2025-05-08 18:02:34,135 - INFO - \u2705 Paso exitoso: Test Step 003: Selección de tipo de vuelo
+2025-05-08 18:02:34,135 - ERROR - \u274c Fallo en el paso 3: Selección de tipo de vuelo
+2025-05-08 18:02:34,135 - INFO - Ejecutando: Test Step 004: Selección de origen y destino
+2025-05-08 18:02:34,136 - INFO - Ejecutando paso 4: Selección de origen y destino
+2025-05-08 18:02:44,380 - WARNING - \u26a0\ufe0f Error al enviar texto a: //*[@id='originDiv']/input - Message: 
+
+2025-05-08 18:02:44,627 - ERROR - \u274c Error en el paso: Test Step 004: Selección de origen y destino - \u26a0\ufe0f Error al enviar texto a: //*[@id='originDiv']/input - Message: 
+
+2025-05-08 18:02:44,627 - ERROR - \u274c Fallo en el paso 4: Selección de origen y destino
+2025-05-08 18:02:44,627 - INFO - Ejecutando: Test Step 005: Selección de fechas
+2025-05-08 18:02:44,627 - INFO - Ejecutando paso 5: Selección de fechas
+2025-05-08 18:02:45,131 - INFO - \u2705 Paso exitoso: Test Step 005: Selección de fechas
+2025-05-08 18:02:45,131 - ERROR - \u274c Fallo en el paso 5: Selección de fechas
+2025-05-08 18:02:45,131 - INFO - Ejecutando: Test Step 006: Selección de pasajeros
+2025-05-08 18:02:45,131 - INFO - Ejecutando paso 6: Selección de pasajeros
+2025-05-08 18:02:46,202 - INFO - \u2705 Paso exitoso: Test Step 006: Selección de pasajeros
+2025-05-08 18:02:46,203 - INFO - \u2705 Prueba completa ejecutada exitosamente!
