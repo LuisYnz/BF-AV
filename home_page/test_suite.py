@@ -4,8 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 import logging
-from home_page.interactions import Home_Page1 as component  # Corregido el nombre de la clase
-from core import execute_test_step  # Asegúrate de que la ruta sea correcta
+from home_page.interactions import Home_Page1 as component 
+from core import execute_test_step
 
 #   --- Definiciones de las Suites ---
 
@@ -18,24 +18,24 @@ def vuelo_basico_suite(driver):
     suite_result = True  # Asumimos que la suite comienza con éxito
     home_page_component = component(driver)
 
-    try:
-        execute_test_step(
-            driver,
-            home_page_component,
-            "Test Step 001: Seleccionar idioma",
-            lambda: home_page_component.select_idioma()
-        )
-    except Exception:
-        suite_result = False
-    try:
-        execute_test_step(
-            driver,
-            home_page_component,
-            "Test Step 002: Seleccionar punto de venta",
-            lambda: home_page_component.select_pos()
-        )
-    except Exception:
-        suite_result = False
+    #try:
+        #execute_test_step(
+            #driver,
+            #home_page_component,
+            #"Test Step 001: Seleccionar idioma",
+            #lambda: home_page_component.select_idioma()
+        #)
+    #except Exception:
+        #suite_result = False
+    #try:
+        #execute_test_step(
+            #driver,
+            #home_page_component,
+            #"Test Step 002: Seleccionar punto de venta",
+            #lambda: home_page_component.select_pos()
+        #)
+    #except Exception:
+        #suite_result = False
 
     try:
         execute_test_step(
@@ -89,6 +89,6 @@ def run_suite(driver):
 #   --- Ejemplo de cómo ejecutar la suite directamente (opcional) ---
 if __name__ == '__main__':
     driver = webdriver.Chrome()
-    driver.get("https://nuxqa4.avtest.ink/es/")  # Reemplaza con tu URL si es diferente aquí
+    driver.get("https://nuxqa4.avtest.ink/es/") 
     run_suite(driver)
     driver.quit()

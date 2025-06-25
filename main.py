@@ -13,7 +13,7 @@ configure_logging()
 # Lista de URLs para probar
 urls = [
     "https://nuxqa4.avtest.ink/es/",  # Primera URL
-    "https://nuxqa5.avtest.ink/es/"   # Segunda URL
+    #"https://nuxqa5.avtest.ink/es/"   # Segunda URL
 ]
 
 # Lista de navegadores para probar

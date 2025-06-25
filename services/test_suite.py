@@ -14,7 +14,6 @@ def services_suite(driver):
     services_component = component(driver)
 
     try:
-  # Ejecuta el paso de prueba para hacer clic en el botón Continuar
         execute_test_step(
         driver,
         services_component,
@@ -38,12 +37,8 @@ def run_suite(driver):
   services_suite(driver)
 
 if __name__ == '__main__':
-  # Configura el driver (Chrome en este caso, pero puedes cambiarlo)
     driver = webdriver.Chrome()
-    driver.get("TU_URL_AQUI")  # Reemplaza con la URL de tu página de servicios
+    driver.get("TU_URL_AQUI")
 
-  # Ejecuta la suite de pruebas
     run_suite(driver)
-
-  # Cierra el driver al finalizar
     driver.quit()

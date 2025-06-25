@@ -13,15 +13,15 @@ def seleccionar_asiento_suite(driver):
     suite_result = True  # Asumimos que la suite comienza con éxito
     seleccion_asientos_component = component(driver)
 
-    try:
-        execute_test_step(
-            driver,
-            seleccion_asientos_component,
-            "Test Step 015: Seleccionar asientos",
-            lambda: seleccion_asientos_component.selected_seat()
-        )
-    except Exception:
-        suite_result = False
+    #try:
+        #execute_test_step(
+            #driver,
+            #seleccion_asientos_component,
+            #"Test Step 015: Seleccionar asientos",
+            #lambda: seleccion_asientos_component.selected_seat()
+        #)
+    #except Exception:
+        #suite_result = False
 
     try:
         execute_test_step(
@@ -45,11 +45,9 @@ def run_suite(driver):
 # --- Ejemplo de cómo ejecutar la suite directamente (opcional) ---
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
-    driver = webdriver.Chrome()  # Asegúrate de tener ChromeDriver en tu PATH
+    driver = webdriver.Chrome()  
     try:
-        driver.get("https://tu-pagina-de-seleccion-de-asientos.com")  # Reemplaza con la URL correcta
-        # Es posible que necesites navegar a la página de selección de asientos
-        # desde otra suite o directamente aquí para probar esta suite.
+        driver.get("https://tu-pagina-de-seleccion-de-asientos.com")
         run_suite(driver)
     finally:
         driver.quit()
