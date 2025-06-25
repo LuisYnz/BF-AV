@@ -6,8 +6,7 @@ from selenium import webdriver
 import logging
 from services.interactions import services as component
 
-from core import execute_test_step # Asegúrate de que la ruta sea correcta
-
+from core import execute_test_step 
 def services_suite(driver):
 
     suite_result = True

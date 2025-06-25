@@ -32,14 +32,14 @@ class payment:
     def capture_screenshot(self, filename):
         ruta = os.path.join("screenshots", filename)
         os.makedirs(os.path.dirname(ruta), exist_ok=True)
-        self.driver.save_screenshot(ruta)
+        self.capture_screenshot(ruta)
 
     def capture_error(self, mensaje, filename):
         ruta_error = os.path.join("screenshots", filename)
         self.warnings_list.append(mensaje)
         logging.warning(mensaje)
         os.makedirs(os.path.dirname(ruta_error), exist_ok=True)
-        self.driver.save_screenshot(ruta_error)
+        self.capture_screenshot(ruta_error)
 
     def credit_card(self):  
         try:

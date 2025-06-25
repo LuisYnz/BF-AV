@@ -18,7 +18,7 @@ class Home_Page1:
         element.send_keys(keys)  # Ingresa informacion en los input.
 
     def save_screenshot(self, path):
-        self.driver.save_screenshot(path)  # Realiza la captura de pantalla.
+        self.save_screenshot(path)  # Realiza la captura de pantalla.
         print(f"Captura guardada en: {path}")  # Imprime el mensaje de la captura guardada.
 
     def select_dropdown(self, xpath, value_xpath):
@@ -56,7 +56,7 @@ class Home_Page1:
     def select_fechas(self):  # Seleccionar fechas de salida.
         self.wait = WebDriverWait(self.driver, 5)
         self.wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='departureDateButtonId']"))).click()  # Clicar en el boton departure
-        self.wait.until(EC.visibility_of_element_located((By.XPATH, "//*[@id='ngbStartDatepickerId']/div[2]/div[1]/ngb-datepicker-month-view/div[6]/div[4]/span/div[1]"))).click()  # Seleccionar fecha salida
+        self.wait.until(EC.visibility_of_element_located((By.XPATH, "//div[contains(@class, 'custom-day_date') and .//span[contains(@class, 'custom-day_day') and normalize-space(text())='25']]"))).click()  # Seleccionar fecha salida
         self.save_screenshot("C:/Users/LuisYánezMalavé/Pictures/Screenshots/fechas_seleccionadas.png")
 
     def passenger(self, joven, niño, bebe):
@@ -64,6 +64,6 @@ class Home_Page1:
         self.click_element("//*[@id='paxControlSearchId']/div/div[2]/div/ul/li[2]/div[2]/ibe-minus-plus/div/button[2]") #Seleccionar pasajero joven.
         self.click_element("//*[@id='paxControlSearchId']/div/div[2]/div/ul/li[3]/div[2]/ibe-minus-plus/div/button[2]") #Seleccionar pasajero niño.
         self.click_element("//*[@id='paxControlSearchId']/div/div[2]/div/ul/li[4]/div[2]/ibe-minus-plus/div/button[2]") #Seleccionar pasajero bebe.
-        self.click_element("//*[@id='paxControlSearchId']/div/div[2]/div/div/button") #Clicar boton confirmar pasajeros.
+        self.click_element("//*[@id='paxControlSearchId']/div/div[2]/div/div/button") #Clicar boton confirmar pasajeros.cl
         self.click_element("//*[@id='searchButton']") #Clicar boton buscar vuelos.
         self.save_screenshot("C:/Users/LuisYánezMalavé/Pictures/Screenshots/pasajeros_seleccionados.png") 
